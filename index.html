@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carnicería Raza</title>
+    <title>Carnicería Raza - Carnicería local en Cartagena, Murcia</title>
+    <meta name="description"
+        content="Carnicería Raza en Cartagena (Murcia): embutidos, companaje, quesos y servicio personalizado. Desarrollo local y empleo, negocio local con gran calidad en España." />
+    <meta name="keywords"
+        content="Carnicería, embutidos, companaje, companage, quesos, negocio local Cartagena, Murcia, España, desarrollo local y empleo, gran servicio personalizado" />
+    <meta name="robots" content="index, follow" />
     <link rel="icon" href="LOGOS/raza_logo_color_web.png" type="image/png" />
     <link rel="stylesheet" href="estilos.css" />
+    <meta property="og:title" content="Carnicería Raza - Próxima apertura en Cartagena" />
+    <meta property="og:description"
+        content="Gran carnicería local en Murcia con embutidos, quesos y atención personalizada. Abierto pronto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="LOGOS/raza_logo_color_web.png" />
+    <meta property="og:locale" content="es_ES" />
 </head>
 
 <body>
@@ -19,24 +30,7 @@
             <p id="cdText">Cargando cuenta regresiva...</p>
         </div>
     </main>
-    <script>
-        const targetDate = new Date('2026-04-12T12:00:00');
-        function updateCountdown() {
-            const now = new Date();
-            const diff = targetDate - now;
-            if (diff <= 0) {
-                document.getElementById('cdText').textContent = '¡Ya abrimos!';
-                return;
-            }
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((diff / (1000 * 60)) % 60);
-            const seconds = Math.floor((diff / 1000) % 60);
-            document.getElementById('cdText').textContent = `${days} D ${hours} H ${minutes} M ${seconds} S`;
-        }
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    </script>
+    <script src="funciones.js"></script>
 </body>
 
 </html>

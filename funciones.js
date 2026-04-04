@@ -26,7 +26,7 @@ setInterval(updateCountdown, 1000);
 // Control del audio de fondo
 const audio = document.getElementById("backgroundAudio");
 const audioToggle = document.getElementById("audioToggle");
-
+audio.load(); // fuerza carga en móvil
 if (audio && audioToggle) {
   audioToggle.addEventListener("click", () => {
     if (audio.paused) {
@@ -39,7 +39,7 @@ if (audio && audioToggle) {
       audioToggle.textContent = "SILENCIAR";
     } else {
       audio.muted = true;
-      audioToggle.textContent = "ESCUCHAR A PACO DE LUCÍA";
+      audioToggle.textContent = "ESCUCHA A PACO DE LUCÍA";
     }
   });
 }

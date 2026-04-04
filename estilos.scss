@@ -58,6 +58,26 @@ p {
     color: $countdown-text;
 }
 
+.audio-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid $surface-border;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.audio-toggle:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
 @media (max-width: 700px) and (orientation: portrait) {
     body {
         align-items: start;

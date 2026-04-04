@@ -22,3 +22,21 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+// Control del audio de fondo
+const audio = document.getElementById('backgroundAudio');
+const audioToggle = document.getElementById('audioToggle');
+
+if (audio && audioToggle) {
+  audioToggle.addEventListener('click', () => {
+    if (audio.muted) {
+      audio.muted = false;
+      audioToggle.textContent = 'SILENCIAR';
+      audioToggle.setAttribute('aria-label', 'Silenciar sonido');
+    } else {
+      audio.muted = true;
+      audioToggle.textContent = 'ESCUCHAR A PACO DE LUCÍA';
+      audioToggle.setAttribute('aria-label', 'Activar sonido');
+    }
+  });
+}

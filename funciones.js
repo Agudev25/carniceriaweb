@@ -1,14 +1,14 @@
-const targetDate = new Date('2026-04-12T12:00:00');
+const targetDate = new Date("2026-04-15T09:00:00");
 
 function updateCountdown() {
   const now = new Date();
   const diff = targetDate - now;
-  const cdText = document.getElementById('cdText');
+  const cdText = document.getElementById("cdText");
 
   if (!cdText) return;
 
   if (diff <= 0) {
-    cdText.textContent = '¡Ya abrimos!';
+    cdText.textContent = "¡Ya abrimos!";
     return;
   }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +6,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ffe8d4 0%, #f7b500 100%);
+  font-family: "Playfair Display SC", serif;
+  background: linear-gradient(135deg, #8B2C2C 0%, #d15353 100%);
   color: #2c2c2c;
   min-height: 100vh;
   display: grid;
@@ -17,7 +18,7 @@ body {
 .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #d99e45;
+  border: 2px solid #2c2c2c;
   border-radius: 16px;
   padding: 2rem;
   max-width: 450px;
@@ -28,17 +29,20 @@ body {
 .logo {
   max-width: 180px;
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 1.2rem;
 }
 
 h1 {
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
-  color: #b32821;
+  color: #8B2C2C;
   margin-bottom: 0.8rem;
 }
 
 p {
+  font-family: "Playfair Display SC", serif;
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
 }
@@ -52,3 +56,30 @@ p {
   font-weight: 600;
   color: #6b3b04;
 }
+
+@media (max-width: 700px) and (orientation: portrait) {
+  body {
+    align-items: start;
+    justify-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  .container {
+    margin-top: 0;
+  }
+}
+/*
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: $whatsapp-size;
+    height: $whatsapp-size;
+    z-index: 999;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: auto;
+}
+*//*# sourceMappingURL=estilos.css.map */

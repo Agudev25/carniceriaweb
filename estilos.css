@@ -57,15 +57,40 @@ p {
   color: #6b3b04;
 }
 
+.audio-toggle {
+  position: fixed;
+  top: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(95vw, 340px);
+  max-width: 340px;
+  background: #b32821;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.audio-toggle:hover {
+  background: rgb(135.9386792453, 30.3773584906, 25.0613207547);
+}
+
 @media (max-width: 700px) and (orientation: portrait) {
   body {
     align-items: start;
     justify-items: center;
-    padding-top: 0.8rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
   }
   .container {
-    margin-top: 0;
+    margin-top: 2rem;
   }
 }
 /*

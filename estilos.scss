@@ -60,34 +60,39 @@ p {
 
 .audio-toggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border: 2px solid $surface-border;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: bold;
+    top: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(95vw, 340px);
+    max-width: 340px;
+    background: $title-color;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.95rem 1.1rem;
+    font-size: 1rem;
+    font-weight: 800;
     cursor: pointer;
-    z-index: 1000;
-    transition: background-color 0.3s;
-    white-space: nowrap;
+    z-index: 1001;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .audio-toggle:hover {
-    background: rgba(255, 255, 255, 1);
+    background: darken($title-color, 10%);
 }
 
 @media (max-width: 700px) and (orientation: portrait) {
     body {
         align-items: start;
         justify-items: center;
-        padding-top: 0.8rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
     }
 
     .container {
-        margin-top: 0;
+        margin-top: 2rem;
     }
 }
 

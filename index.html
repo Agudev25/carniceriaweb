@@ -5,60 +5,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carnicería Raza</title>
-    <meta name="description"
-        content="Carnicería Raza en Cartagena (Murcia): embutidos, companaje, quesos y servicio personalizado. Desarrollo local y empleo, negocio local con gran calidad en España." />
-    <meta name="keywords"
-        content="Carnicería, Carnicería Raza, embutidos, companaje, companage, quesos, negocio local Cartagena, Murcia, España, desarrollo local y empleo, gran servicio personalizado" />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" href="LOGOS/raza_logo_color_web.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="estilos.css" />
-    <meta property="og:title" content="Carnicería Raza - Próxima apertura en Cartagena" />
-    <meta property="og:description"
-        content="Gran carnicería local en Murcia con embutidos, quesos y atención personalizada. Abierto pronto." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="LOGOS/raza_logo_color_web.png" />
-    <meta property="og:locale" content="es_ES" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ButcherShop",
-      "name": "Carnicería Raza",
-      "url": "https://carniceriaraza.es",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cartagena",
-        "addressRegion": "Murcia",
-        "addressCountry": "ES"
-      }
-    }
-    </script>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<!--
-<a href="https://wa.me/34610237943?text=Hola%20quisiera%20información%20sobre%20vuestros%20productos"
-    class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
 
-    <img src="LOGOS/whatsapp.png" alt="WhatsApp">
-</a>
--->
-
-<body>
-    <audio id="backgroundAudio" loop>
-        <source src="AUDIOS/EntreDosAguas.mp3" type="audio/mpeg">
-    </audio>
-    <button id="audioToggle" class="audio-toggle" aria-label="Escuchar a Paco de Lucía">ESCUCHA A PACO DE
-        LUCÍA
-    </button>
-    <main class="container">
-        <img src="LOGOS/raza_logo_letras_color.png" alt="Logo Raza" class="logo" />
-        <h1>¡PRÓXIMA APERTURA!</h1>
-        <p>Dirección: C. la Paz, 1, 30204 Cartagena, Murcia</p>
-        <p>Estamos preparando todo para que tu experiencia en Carnicería Raza sea la mejor posible.</p>
-        <div class="countdown">
-            <span>Apertura: 15-Abril-2026 09:00 am</span>
-            <p id="cdText">Cargando cuenta regresiva...</p>
+<body class="bg-body">
+    <header class="bg-white shadow-sm py-3">
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="LOGOS/raza_logo_color_web.png" alt="Logo Carnicería Raza" class="header-logo">
+            <div>
+                <h1 class="h4 mb-0 mt-2">
+                    <span class="title-raza">Carnicería</span>
+                    <span class="title-grana">Raza</span>
+                </h1>
+            </div>
         </div>
+    </header>
+
+    <main class="container-fluid p-0">
+        <div class="hero-section">
+            <div class="hero-overlay">
+                <h2 class="hero-title">DONDE EL SABOR IMPORTA</h2>
+            </div>
+        </div>
+
+        <div class="d-lg-none text-center">
+            <img src="IMAGENES/CartelWeb.webp" alt="Lema" class="img-fluid">
+        </div>
+        <div class="d-lg-none text-center">
+            <img src="IMAGENES/PantallaGrande.webp" alt="Lema" class="img-fluid">
+        </div>
+
+        <section class="features py-5">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-6 d-none d-lg-flex flex-column justify-content-center align-items-center gap-4">
+                        <img src="IMAGENES/CartelWeb.webp" alt="Lema" class="img-fluid lateral-lema-img">
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
+                        <img src="IMAGENES/PantallaGrande.webp" alt="Lema" class="img-fluid lateral-lema-img">
+                    </div>
+
+                    <!-- ITEM 1 (imagen - texto) -->
+                    <div class="col-lg-6 col-12">
+                        <div class="row mb-4 align-items-center justify-content-center text-center feature-row">
+                            <div class="col-6 col-lg-4 order-1 order-lg-1">
+                                <img src="IMAGENES/imgitem4.webp" class="rounded feature-img">
+                            </div>
+                            <div class="col-6 col-lg-8 order-2 order-lg-2">
+                                <h4>EL MEJOR SERVICIO POSIBLE</h4>
+                                <p>Más de 10 años de experiencia nos abalan como profesionales de confianza.
+                                    El esmero y la atención especial a cada cliente, marcan la diferencia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 (texto - imagen en desktop) -->
+                    <div class="col-lg-6 col-12">
+                        <div class="row mb-4 align-items-center justify-content-center text-center feature-row">
+                            <div class="col-6 col-lg-4 order-2 order-lg-2">
+                                <img src="IMAGENES/imgitem3.webp" class="rounded feature-img">
+                            </div>
+                            <div class="col-6 col-lg-8  order-1 order-lg-1">
+                                <h4>PETICIONES ESPECIALES</h4>
+                                <p>Ofrecemos cortes premium con el mejor sabor y textura para tus recetas favoritas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 (imagen - texto) -->
+                    <div class="col-lg-6 col-12">
+                        <div class="row mb-4 align-items-center justify-content-center text-center feature-row">
+                            <div class="col-6 col-lg-4 order-1 order-lg-1">
+                                <img src="IMAGENES/imgitem5.webp" class="rounded feature-img">
+                            </div>
+                            <div class="col-6 col-lg-8 order-2 order-lg-2">
+                                <h4>LA MEJOR ATENCIÓN</h4>
+                                <p>Atención personalizada y consejos expertos para elegir la carne perfecta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 4 (texto - imagen en desktop) -->
+                    <div class="col-lg-6 col-12">
+                        <div class="row mb-4 align-items-center justify-content-center text-center feature-row">
+                            <div class="col-6 col-lg-4 order-2 order-lg-2">
+                                <img src="IMAGENES/imgitem1.webp" class="rounded feature-img">
+                            </div>
+                            <div class="col-6 col-lg-8  order-1 order-lg-1">
+                                <h4>PEDIDOS POR WHATSAPP</h4>
+                                <p>Contacta con nosotros por WhatsApp para hacer tu pedido.
+                                    Nos comprometemos a contestar en menos de 30 minutos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="funciones.js"></script>
+
+    <footer class="footer bg-grana text-surface py-4">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 text-center mb-3">
+                    <h5 class="fw-bold">Carnicería Raza</h5>
+                    <p class="mb-2 small">Dirección: C. la Paz, 1, 30204 Cartagena, Murcia</p>
+                    <p class="mb-2 small">Teléfono: 642 93 47 16</p>
+                    <p class="mb-0 small">Email: carniceriarazact@gmail.com</p>
+                </div>
+                <div class="col-md-6 text-center mb-3">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="https://www.instagram.com/carniceria_raza_cartagena?igsh=MXVoYzViNHUzN3ltcQ=="
+                            class="social-icon" target="_blank" aria-label="Instagram">
+                            <img src="https://ssl.gstatic.com/kpui/social/instagram_32x32.png" alt="Instagram"
+                                class="img-fluid">
+                        </a>
+                        <a href="https://www.instagram.com/carniceria_raza_cartagena?igsh=MXVoYzViNHUzN3ltcQ=="
+                            class="social-icon" target="_blank" aria-label="Facebook">
+                            <img src="LOGOS/logoFacebook.jpg" alt="Facebook" class="img-fluid">
+                        </a>
+                        <a href="https://wa.me/34642934716?text=Hola%3B%20me%20gustar%C3%ADa%20realizar%20un%20pedido"
+                            class="social-icon" target="_blank" aria-label="WhatsApp">
+                            <img src="LOGOS/logowatsap.jpg" alt="WhatsApp" class="img-fluid">
+                        </a>
+                        <a href="mailto:carniceriarazact@gmail.com" class="social-icon" aria-label="Email">
+                            <img src="LOGOS/logoGmail.png" alt="Email" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-1 small">© 2026 Carnicería Raza. Todos los derechos reservados.</p>
+                    <p class="mb-0 small">Powered by Agudev25</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34642934716?text=Hola%3B%20me%20gustar%C3%ADa%20realizar%20un%20pedido"
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Haz tu pedido por WhatsApp">
+        <img src="LOGOS/logowatsap.jpg" alt="WhatsApp" class="whatsapp-icon">
+        <span>Contacta</span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>
